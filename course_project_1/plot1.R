@@ -1,5 +1,3 @@
-setwd(".\\Exp")
-
 # define file for input
 filename <- "household_power_consumption.txt"
 
@@ -28,5 +26,3 @@ hist(Subset_Household_pwr_cons$Global_active_power,
      ylab="Frequency",
      col="red")
 dev.off()
-
-setwd("C:\\Users\\Jonas\\Documents\\R")
