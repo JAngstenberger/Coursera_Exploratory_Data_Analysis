@@ -23,30 +23,30 @@ png("plot4.png", width=480, height=480)
 par(mfrow=c(2,2))
 
 # 1st part of plot 4
-plot(Subset_Household_pwr_cons$DateTime,
+plot(Subset_Household_pwr_cons$Time,
      Subset_Household_pwr_cons$Global_active_power,
      type="l",
      xlab="",
      ylab="Global Active Power")
 
 # 2nd part of plot 4
-plot(Subset_Household_pwr_cons$DateTime,
+plot(Subset_Household_pwr_cons$Time,
      Subset_Household_pwr_cons$Voltage,
      type="l",
      xlab="datetime",
      ylab="Voltage")
 
 # 3rd part of plot 4
-plot(Subset_Household_pwr_cons$DateTime,
+plot(Subset_Household_pwr_cons$Time,
      Subset_Household_pwr_cons$Sub_metering_1,
      type="l",
      col="black",
      xlab="",
      ylab="Energy sub metering")
-lines(Subset_Household_pwr_cons$DateTime,
+lines(Subset_Household_pwr_cons$Time,
       Subset_Household_pwr_cons$Sub_metering_2,
       col="red")
-lines(Subset_Household_pwr_cons$DateTime,
+lines(Subset_Household_pwr_cons$Time,
       Subset_Household_pwr_cons$Sub_metering_3,
       col="blue")
 legend("topright",
@@ -56,11 +56,11 @@ legend("topright",
        box.lwd=0)
 
 # 4th part of plot 4
-plot(Subset_Household_pwr_cons$DateTime,
+plot(Subset_Household_pwr_cons$Time,
      Subset_Household_pwr_cons$Global_reactive_power,
      type="n",
      xlab="datetime",
      ylab="Global_reactive_power")
-lines(Subset_Household_pwr_cons$DateTime,
+lines(Subset_Household_pwr_cons$Time,
       Subset_Household_pwr_cons$Global_reactive_power)
 dev.off()

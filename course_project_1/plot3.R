@@ -21,16 +21,16 @@ Subset_Household_pwr_cons <- subset(Household_pwr_cons, Date >= as.Date("2007-02
 
 png("plot3.png", width=480, height=480)
 
-plot(Subset_Household_pwr_cons$DateTime,
+plot(Subset_Household_pwr_cons$Time,
      Subset_Household_pwr_cons$Sub_metering_1,
      type="l",
      col="black",
      xlab="",
      ylab="Energy sub metering")
-lines(Subset_Household_pwr_cons$DateTime,
+lines(Subset_Household_pwr_cons$Time,
       Subset_Household_pwr_cons$Sub_metering_2,
       col="red")
-lines(Subset_Household_pwr_cons$DateTime,
+lines(Subset_Household_pwr_cons$Time,
       Subset_Household_pwr_cons$Sub_metering_3,
       col="blue")
 legend("topright",

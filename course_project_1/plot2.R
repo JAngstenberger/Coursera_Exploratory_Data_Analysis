@@ -20,7 +20,7 @@ Subset_Household_pwr_cons <- subset(Household_pwr_cons, Date >= as.Date("2007-02
 # Generate plot 2
 png("plot2.png", width=480, height=480)
 
-plot(Subset_Household_pwr_cons$DateTime, Subset_Household_pwr_cons$Global_active_power,
+plot(Subset_Household_pwr_cons$Time, Subset_Household_pwr_cons$Global_active_power,
      type="l",
      xlab="",
      ylab="Global Active Power (kilowatts)")
