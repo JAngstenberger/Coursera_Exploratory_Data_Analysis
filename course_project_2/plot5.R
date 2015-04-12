@@ -9,7 +9,7 @@ SCC <- readRDS("Source_Classification_Code.rds")
 
 # Get Baltimore emissions from motor vehicle sources
 BmoreEmissions <- NEI[(NEI$fips=="24510") & (NEI$type=="ON-ROAD"),]
-BmoreEmissionsYear <- aggregate(Emissions ~ year, data=BmoreEmissions, FUN=sum)
+BmoreEmissionsYear <- aggregate(Emissions ~ year, BmoreEmissions, sum)
 
 # Generate plot 5
 png("plot5.png")

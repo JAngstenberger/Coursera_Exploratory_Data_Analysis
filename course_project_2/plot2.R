@@ -14,6 +14,6 @@ png('plot2.png')
 barplot(height=BmoreEmissionsYear$Emissions,
         names.arg=BmoreEmissionsYear$year,
         xlab="years",
-        ylab=expression('total PM'[2]*' emission'),
-        main=expression('Total PM'[2]*' emissions in Baltimore City, '*'Maryland from 1999 to 2008'))
+        ylab=expression("total PM"[2]*" emission"),
+        main=expression("Total PM"[2]*" emissions in Baltimore City, Maryland from 1999 to 2008"))
 dev.off()

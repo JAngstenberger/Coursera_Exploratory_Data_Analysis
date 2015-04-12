@@ -15,7 +15,7 @@ USCombustionCoalSources <- SCC[USCombustionCoal,]
 Emissions <- NEI[(NEI$SCC %in% USCombustionCoalSources$SCC), ]
 
 # group by year
-EmissionsYears <- aggregate(Emissions ~ year, data=Emissions, FUN=sum)
+EmissionsYears <- aggregate(Emissions ~ year, Emissions, sum)
 
 # Generate plot 4
 png("plot4.png")
