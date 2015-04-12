@@ -22,6 +22,7 @@ Subset_Household_pwr_cons <- subset(Household_pwr_cons, Date >= as.Date("2007-02
 
 # Generate plot 4
 png("plot4.png", width=480, height=480)
+
 # Orientation of the 4 subplots
 par(mfrow=c(2,2))
 
