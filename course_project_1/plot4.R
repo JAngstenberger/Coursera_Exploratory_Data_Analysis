@@ -22,24 +22,24 @@ Subset_Household_pwr_cons <- subset(Household_pwr_cons, Date >= as.Date("2007-02
 
 # Generate plot 4
 png("plot4.png", width=480, height=480)
-
+# Orientation of the 4 subplots
 par(mfrow=c(2,2))
 
-# 1st part of plot 4
+# 1st subplot of plot 4
 plot(Subset_Household_pwr_cons$Time,
      Subset_Household_pwr_cons$Global_active_power,
      type="l",
      xlab="",
      ylab="Global Active Power")
 
-# 2nd part of plot 4
+# 2nd subplot of plot 4
 plot(Subset_Household_pwr_cons$Time,
      Subset_Household_pwr_cons$Voltage,
      type="l",
      xlab="datetime",
      ylab="Voltage")
 
-# 3rd part of plot 4
+# 3rd subplot of plot 4
 plot(Subset_Household_pwr_cons$Time,
      Subset_Household_pwr_cons$Sub_metering_1,
      type="l",
@@ -58,7 +58,7 @@ legend("topright",
        lty=1,
        box.lwd=0)
 
-# 4th part of plot 4
+# 4th subplot of plot 4
 plot(Subset_Household_pwr_cons$Time,
      Subset_Household_pwr_cons$Global_reactive_power,
      type="n",
