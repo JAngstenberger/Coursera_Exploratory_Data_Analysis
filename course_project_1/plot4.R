@@ -11,7 +11,7 @@ Household_pwr_cons <- read.table(filename,
 
 # Convert Time and Date variables into Date/Time classes
 Household_pwr_cons <- transform(Household_pwr_cons,
-                                Time = strptime(paste(Household_pwr_cons$Date, Household_pwr_cons$Time), "%d/%m/%Y %H:%M:%S"))
+                                Time = strptime(paste(Household_pwr_cons$Date, Household_pwr_cons$Time), "%d/%m/%Y %H:%M:%S", tz = "GMT"))
 Household_pwr_cons <- transform(Household_pwr_cons, Date = as.Date(Date, "%d/%m/%Y"))
 
 # Subsetting dates from 2007-02-01 to 2007-02-02
